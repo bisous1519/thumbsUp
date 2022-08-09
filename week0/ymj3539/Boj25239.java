@@ -35,9 +35,8 @@ public class Boj25239 {
 			double time = Double.parseDouble(tokens.nextToken());
 			String eventDetail = tokens.nextToken();
 			
-			timeSum += time;
 			
-			if(timeSum > 60) {
+			if(time > 60) {
 				break;
 			}
 			if(eventDetail.equals("^")) {
