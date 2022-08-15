@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,python,macos,windows
 
 ### Java ###
+.project
 # Compiled class file
 *.class
 
