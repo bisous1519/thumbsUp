@@ -28,7 +28,7 @@ public class Boj4179 {
 	public static boolean isRange(int x, int y) {
 		return 0<=x && x<R && 0<=y && y<C;
 	}
-	
+		
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -44,7 +44,7 @@ public class Boj4179 {
 		for(int i=0; i<R; i++) {
 			map[i] = br.readLine().toCharArray();
 			for(int j=0; j<map[i].length; j++) {
-				FiredStatus f = new FiredStatus(i,j,1000000);
+				FiredStatus f = new FiredStatus(i,j,1000001);
 				firedStatusAry[i][j] = f;
 				if(map[i][j] == 'F') {
 					f.depth=0;
@@ -85,12 +85,11 @@ public class Boj4179 {
 		boolean flag = true;
 		while(!q.isEmpty() && flag) {
 			FiredStatus fs = q.poll();
-			
 			for(int i=0; i<dxs.length; i++) {
 				int nx = fs.x + dxs[i];
 				int ny = fs.y + dys[i];
 				
-				if(!isRange(nx,ny) && map[fs.x][fs.y]=='.' && fs.depth < firedStatusAry[fs.x][fs.y].depth) {
+				if(!isRange(nx,ny) && (map[fs.x][fs.y]=='.' | map[fs.x][fs.y]== 'J') && fs.depth < firedStatusAry[fs.x][fs.y].depth) {
 					System.out.println(fs.depth+1);
 					flag = false;
 					break;
@@ -103,10 +102,8 @@ public class Boj4179 {
 			}
 		}
 		
-		if(R==C&& R==1) {
-			System.out.println(1);
-		}
-		else if(flag)
+
+		if(flag)
 			System.out.println("IMPOSSIBLE");
 		
 	}
