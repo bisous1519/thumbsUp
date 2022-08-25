@@ -37,6 +37,30 @@
         
     - 왜인지 모르게 2번째 케이스에서 무한 루프를 도는데 이유를 찾지 못했음
 
+### [S]10103: 주사위 게임
+- 접근 방법
+    - 주사위의 수를 입력받아서 크기를 비교만 하면 되는 문제
+- 풀이
+    - 클래스를 만들어서 주사위 수를 입력받으면 승패를 결정짓고 점수를 반영하게함
+    - 다른 풀이를 보니 미리 다 뺀 후에 업데이트를 하는게 속도가 빨랐음
+
+### [S]13335: 트럭
+- 접근 방법
+    - 처음에 어떻게 풀어야 할 지 감이 잘 안왔음 ->예제가 잘 안되었음
+    - 큐라는 자료구조와 큐에서 트럭이 다 빠져도 남은 트럭은 이동하면 된다는 점만 잊지 않으면 될 문제라고 생각
+- 풀이
+    - 트럭 클래스를 만들어서 무게와 이동시간을 가지고 있게 함
+    - 다리에 하중을 생각하면서 올라올 수 있는 트럭을 다리에 하나씩 실음(큐 활용)
+    - 
+
+### [S]3190: 뱀
+- 접근 방법
+    - deque 자료구조를 알면 쉽게 접근할 수 있었던 문제
+- 풀이
+    - 사과가 없는 경우 끝을 빼고 맵을 갱신, 그 외에는 머리가 앞으로 이동할 때 값을 앞에 넣어주고 맵을 갱신하면 됨
+### [S]20005: 보스몬스터 전리품
+- 접근 방법
+
 ## Reference
 
-- Boj : https://www.acmicpc.net/problem/1022, https://www.acmicpc.net/problem/10800, https://www.acmicpc.net/problem/16918, https://www.acmicpc.net/problem/1941, https://www.acmicpc.net/problem/20208
+- Boj : https://www.acmicpc.net/problem/1022, https://www.acmicpc.net/problem/10800, https://www.acmicpc.net/problem/16918, https://www.acmicpc.net/problem/1941, https://www.acmicpc.net/problem/20208, https://www.acmicpc.net/problem/10103, https://www.acmicpc.net/problem/13335, https://www.acmicpc.net/problem/3190, https://www.acmicpc.net/problem/20005
