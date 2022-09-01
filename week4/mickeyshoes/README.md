@@ -29,8 +29,21 @@
 
 ### [F]20061: 모노미노도미노 2
 - 접근 방법
+    - 없어요... 있었는데도 아니고 없어요..
 
+### [S]16985: Maaaaaaaaaze
+- 접근 방법
+    - 맵을 조합하기 위해 맵을 몇번 돌릴 것인지(4^5), 몇번 맵을 선택할 것인지(5!)가 시간안에 드는지 확인 ->2초 및 512MB 여서 가능하다고 판단
+    - 시작점이 될 후보는 총 8개(꼭지점의 갯수)이지만, 맵의 반대가 되어야 출입구가 된다는 점, 그렇게 될 경우엔 굳이 출구 였던 곳을 입구로 설정해서 다시 탐색할 필요가 없다고 판단하여 총 4개의 출발점 후보를 선정 
+- 풀이
+    - 맵을 우선 조합(permutation) : O(5!)
+    - 회전할 횟수 결정 및 회전 : O(4^5*3)
+    - 맵 최단경로(BFS) 탐색:O(5^3)
+
+
+### [F]9370: 미확인 도착지
+- 접근 방법
 
 ## Reference
 
-- Boj : https://www.acmicpc.net/problem/18428, https://www.acmicpc.net/problem/7573, https://www.acmicpc.net/problem/11559, https://www.acmicpc.net/problem/20061
+- Boj : https://www.acmicpc.net/problem/18428, https://www.acmicpc.net/problem/7573, https://www.acmicpc.net/problem/11559, https://www.acmicpc.net/problem/20061, https://www.acmicpc.net/problem/16985
