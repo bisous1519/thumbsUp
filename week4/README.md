@@ -1,5 +1,14 @@
 # week3
 - implements, simulation
+
+## 추후 일정
+```
+5일 - 알고리즘 라이브 코딩(SWEA)
+8일 - pass
+12일 - 보류 
+15일 - cs
+```
+스터디 뒤풀이 한강은 은제감?
 ## BOJ
 
 ### 18428: 감시 피하기 
@@ -27,6 +36,17 @@
     - 각 row 마다의 블럭 갯수를 counting 하여 특정 갯수 이상이 되었을 경우 삭제
         - 비트마스킹으로도 가능하다고 함
 
+### 16985: Maaaaaaaaaze
+- 접근 방법
+    - 각 층의 순열(O(5!)) x 회전수 및 회전(O(4^5)) x BFS(O(5^3))
+    - 시작점은 고려하지 않아도 됨
+        - 어차피 회전에 출발점이 고려가 되어 있음..
+
+
+### 9370: 미확인 도착지
+- 접근 방법
+    - 푼사람 도와조라!!!!!!!!!!!
+
 ## Programmers
 
 ### 후보키(Candidate Key)
@@ -45,7 +65,7 @@
 
 ## Reference
 
-- Boj : https://www.acmicpc.net/problem/18428, https://www.acmicpc.net/problem/7573, https://www.acmicpc.net/problem/11559, https://www.acmicpc.net/problem/20061
+- Boj : https://www.acmicpc.net/problem/18428, https://www.acmicpc.net/problem/7573, https://www.acmicpc.net/problem/11559, https://www.acmicpc.net/problem/20061, https://www.acmicpc.net/problem/16985, https://www.acmicpc.net/problem/9370
 
 - programmers : https://school.programmers.co.kr/learn/courses/30/lessons/42890
 
