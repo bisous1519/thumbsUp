@@ -30,4 +30,6 @@
 
 - boj : [연구소2](https://www.acmicpc.net/problem/17141)
 
+- database : [E-R diagram](https://www.mysqltutorial.org/mysql-sample-database.aspx)
+
 - lecture : [운영체제](http://www.kocw.net/home/search/kemView.do?kemId=1046323), [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
