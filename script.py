@@ -6,7 +6,9 @@ locate = ''
 
 def make_files(locate:str)->None:
     os.chdir(locate)
-    for i in ['bisous1519', 'cksgnlcjswo', 'Hoony-JSG', 'mickeyshoes', 'ymj3539']:
+    with open('README.md', 'w') as f:
+        f.write(f'# {locate}')
+    for i in ['bisous1519', 'cksgnlcjswo', 'Hoony-JSG', 'mickeyshoes', 'ymj3539', 'dolpongg']:
         os.mkdir(i)
         os.chdir(i)
         with open('README.md', 'w') as f:
