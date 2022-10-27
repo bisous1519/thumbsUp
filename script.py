@@ -8,7 +8,7 @@ def make_files(locate:str)->None:
     os.chdir(locate)
     with open('README.md', 'w') as f:
         f.write(f'# {locate}')
-    for i in ['bisous1519', 'cksgnlcjswo', 'Hoony-JSG', 'mickeyshoes', 'ymj3539', 'dolpongg']:
+    for i in ['bisous1519', 'cksgnlcjswo', 'Hoony-JSG', 'mickeyshoes', 'ymj3539', 'dolpongg', 'Choseungheee']:
         os.mkdir(i)
         os.chdir(i)
         with open('README.md', 'w') as f:
